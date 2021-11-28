@@ -1,0 +1,4 @@
+-----Chess game by Python group 15-----
++ Nguyễn Xuân Đài
++ Đỗ Đức Quang
++ Nguyễn Trung Anh

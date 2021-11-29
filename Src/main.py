@@ -124,7 +124,12 @@ def main():
                 ft_font.render_to(screen, text_rect.topleft,
                                   'white won', (255, 0, 0))
         elif gs.stalemate:
-            gameOver = True
+            screen.blit(background, (0, 0))
+            text_rect = ft_font.get_rect('draw')
+            text_rect.center = screen.get_rect().center
+            ft_font.render_to(screen, text_rect.topleft,
+                              'draw', (255, 0, 0))
+
 
         clock.tick(max_fps)
         p.display.flip()

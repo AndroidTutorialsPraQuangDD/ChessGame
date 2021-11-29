@@ -93,6 +93,7 @@ def main():
                 if e.key == p.K_z:
                     gs.undoMove()
                     moveMade = True
+		    gameOver = False
                 if e.key == p.K_r:  # reset game khi nhấn r
                     gs = ChessEngine.GameState()
                     validMoves = gs.getValidMoves()

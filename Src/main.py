@@ -105,7 +105,6 @@ def main():
         if moveMade:
             validMoves = gs.getValidMoves()
             moveMade = False
-            print(gameOver)
 
         drawGameState(screen, gs, validMoves, square_selected)
 

@@ -99,6 +99,7 @@ def main():
                     square_selected = ()
                     clicks = []
                     moveMade = False
+		    gameOver = False
 
         if moveMade:
             validMoves = gs.getValidMoves()

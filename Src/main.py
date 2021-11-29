@@ -93,14 +93,14 @@ def main():
                 if e.key == p.K_z:
                     gs.undoMove()
                     moveMade = True
-		    gameOver = False
+                    gameOver = False
                 if e.key == p.K_r:  # reset game khi nhấn r
                     gs = ChessEngine.GameState()
                     validMoves = gs.getValidMoves()
                     square_selected = ()
                     clicks = []
                     moveMade = False
-		    gameOver = False
+                    gameOver = False
 
         if moveMade:
             validMoves = gs.getValidMoves()
@@ -129,7 +129,6 @@ def main():
             text_rect.center = screen.get_rect().center
             ft_font.render_to(screen, text_rect.topleft,
                               'draw', (255, 0, 0))
-
 
         clock.tick(max_fps)
         p.display.flip()

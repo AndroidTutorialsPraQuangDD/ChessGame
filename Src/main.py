@@ -1,6 +1,5 @@
 
 import pygame as p
-from pygame.time import Clock
 import ChessEngine
 from ChessEngine import GameState
 import pygame.freetype
@@ -8,7 +7,6 @@ import pygame.freetype
 width = height = 512
 size = 8
 square_size = width // size
-max_fps = 15
 images = {}
 
 
@@ -42,7 +40,6 @@ def loadImages():
 def main():
     p.init()
     screen = p.display.set_mode((width, height))
-    clock = p.time.Clock()
     screen.fill(p.Color('white'))
     ft_font = p.freetype.SysFont('Times New Roman', 80)
 
@@ -129,7 +126,6 @@ def main():
             ft_font.render_to(screen, text_rect.topleft,
                               'draw', (255, 0, 0))
 
-        clock.tick(max_fps)
         p.display.flip()
 
 
